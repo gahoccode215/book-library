@@ -24,5 +24,5 @@ public class BookQueryController {
         GetAllBookQuery query = new GetAllBookQuery();
         return  queryGateway.query(query, ResponseTypes.multipleInstancesOf(BookResponseModel.class)).join();
     }
-    
+
 }
